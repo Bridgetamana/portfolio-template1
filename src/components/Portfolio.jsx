@@ -6,6 +6,7 @@ import {
   Mail,
   ExternalLink,
 } from "lucide-react";
+import Avatar from '../assets/avatar.webp';
 
 const Portfolio = () => {
   const createGoogleSearchUrl = (query) => {
@@ -14,11 +15,11 @@ const Portfolio = () => {
 
   return (
     <main className="flex min-h-screen items-center justify-center p-4 bg-white">
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-3 max-w-[500px] w-full">
+      <div className="flex flex-col md:flex-row items-center gap-3 max-w-[500px] w-full">
         <div className="relative">
           <div className="w-30 h-30 rounded-full overflow-hidden border-2 border-zinc-100 shadow-sm">
             <img
-              src="https://img.freepik.com/premium-photo/black-woman-portrait-smile-with-arms-crossed-studio-with-casual-style-fashion-confidence-happy-young-female-model-empowerment-happiness-with-hair-braids-beauty-pride-nigeria_590464-124307.jpg?ga=GA1.1.2025607660.1740638809&semt=ais_country_boost&w=740"
+              src={Avatar}
               alt="Jane Doe"
               className="object-cover"
             />
